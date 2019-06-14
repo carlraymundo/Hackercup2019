@@ -16,6 +16,8 @@ and open the template in the editor.
 
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        
             
     </head>
     
@@ -24,11 +26,11 @@ and open the template in the editor.
             <div class="row" style="margin-top:10%">
                     <div class="col s0 l2"></div>
                     <div class="col s12 l8">
-                        
+                            <div class="container card-panel white" row style="width:90%; margin-left: auto; margin-right auto; margin-top: 70px;">     
                             <canvas id="radar-chart" width="600" height="400"></canvas>
                             <script>
-                            var ctx = document.getElementById("radar-chart").getContext('2d');
-                            var myChart = new Chart(ctx, {
+                            
+                            var myChart = new Chart(document.getElementById("radar-chart"), {
                                 type: 'radar',
                                 data: {
                                 labels: ["Addtion", "Subtraction", "Multiplication", "Division"],
@@ -40,7 +42,7 @@ and open the template in the editor.
                                     borderColor: "rgba(179,181,198,1)",
                                     pointBorderColor: "#fff",
                                     pointBackgroundColor: "rgba(179,181,198,1)",
-                                    data: [8.77,55.61,21.69,6.62,6.82]
+                                    data: [75,83,73,81,85]
                                     }, {
                                     label: "Personal",
                                     fill: true,
@@ -49,7 +51,7 @@ and open the template in the editor.
                                     pointBorderColor: "#fff",
                                     pointBackgroundColor: "rgba(255,99,132,1)",
                                     pointBorderColor: "#fff",
-                                    data: [25.48,54.16,7.61,8.06,4.45]
+                                    data: [76,83,70,83,86]
                                     }
                                 ]
                                 },
@@ -62,8 +64,11 @@ and open the template in the editor.
                             });
                              </script>
                     </div>
+                    </div>
+
             <div class="col s0 l2"></div>
         </center>
+        <script src="../assets/js/plugins/chartjs.min.js "></script>
     </body>
 </html>
     
