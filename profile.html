@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Freebie: 12 Practical Templates For List Pages</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="assets/css/product-lists/product-list-small.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+     <script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- 
+<body background="https://i.imgur.com/E8M6vZ5.png" style="background-attachment: fixed; background-repeat:no-repeat; background-size:100%;"> -->
+</head>
+
+<body>
+
+        <nav class="light-blue lighten-1" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">SUMM IT</a>
+                    <ul class="right hide-on-med-and-down">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="rewards.html">Rewards</a></li>
+                            <li><a href="referral.html">Refer to a Friend</a></li>
+                            <li><a href="login.html">Logout</a></li>
+                          </ul>
+                    
+                          <ul id="nav-mobile" class="sidenav">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="rewards.html">Rewards</a></li>
+                                <li><a href="referral.html">Refer to a Friend</a></li>
+                                <li><a href="login.html">Logout</a></li>
+                          </ul>
+                  <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+              </nav>
+              <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                    <li class="tab"><a class="active" href="#presonalVsAve">Personal vs Average</a></li>
+                    <li class="tab"><a href="#stages">Stages</a></li>
+                  </ul>
+
+                  
+        <li>
+
+                <center>
+                        <div class="row" >
+                                <div class="col s0 l2"></div>
+                                <div class="col s12 l8"></div>
+                                        <div class="container card-panel white" row style="width:50%; margin-left: auto; margin-right: auto;">     
+                                        <canvas id="radar-chart" width="600" height="400"></canvas>
+                                        <script>
+                                        
+                                        var myChart = new Chart(document.getElementById("radar-chart"), {
+                                            type: 'radar',
+                                            data: {
+                                            labels: ["Addtion", "Subtraction", "Multiplication", "Division"],
+                                            datasets: [
+                                                {
+                                                label: "Average",
+                                                fill: true,
+                                                backgroundColor: "rgba(179,181,198,0.2)",
+                                                borderColor: "rgba(179,181,198,1)",
+                                                pointBorderColor: "#fff",
+                                                pointBackgroundColor: "rgba(179,181,198,1)",
+                                                data: [75,83,73,81,85]
+                                                }, {
+                                                label: "Personal",
+                                                fill: true,
+                                                backgroundColor: "rgba(255,99,132,0.2)",
+                                                borderColor: "rgba(255,99,132,1)",
+                                                pointBorderColor: "#fff",
+                                                pointBackgroundColor: "rgba(255,99,132,1)",
+                                                pointBorderColor: "#fff",
+                                                data: [76,83,70,83,86]
+                                                }
+                                            ]
+                                            },
+                                            options: {
+                                            title: {
+                                                display: true,
+                                                text: 'Personal vs Average'
+                                            }
+                                            }
+                                        });
+                                         </script>
+                                </div>
+                                </div>
+            
+
+        </li>
+
+    </ul>
+    <footer class="page-footer orange">
+        <div class="container">
+
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Caballero, Gabriel, Go,
+                    Tiu, Raymundo</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../assets/js/plugins/chartjs.min.js "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+M.AutoInit();
+        
+
+
+$(document).ready(function(){
+  $('.tabs').tabs();
+});
+</script>
+</html>
