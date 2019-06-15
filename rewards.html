@@ -9,6 +9,11 @@
 
     <title>Freebie: 12 Practical Templates For List Pages</title>
 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="assets/css/product-lists/product-list-small.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
      <!-- CSS  -->
@@ -41,27 +46,22 @@
                   <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 </div>
               </nav>
+              <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                    <li class="tab"><a class="active" href="#redeemRewards">Redeem Rewards</a></li>
+                    <li class="tab"><a href="#morePoints">More Points</a></li>
+                  </ul>
 
-
-
+                  <div id="redeemRewards" class="col s12">
     <ul class="product-list-small">
-
         <li>
-
-            <a href="#" class="product-photo">
+             <a href="#" class="product-photo">
                 <img src="https://thefoodcharlatan.com/wp-content/uploads/2018/11/Nanas-Famous-Homemade-Peppermint-Ice-Cream-6-e1543277868775.jpg" height="105" alt="Ice cream" />
             </a>
-
             <h2><a href="#">Ice Cream</a></h2>
-
-
             <p class="product-description">Strawberry Ice cream</p>
-
             <p class="product-price">50 Reward Points</p>
-
-
+            <button style="float: right" class="waves-effect waves-light btn">CLAIM</button>
         </li>
-
         <li>
 
             <a href="#" class="product-photo">
@@ -75,6 +75,7 @@
 
             <p class="product-price">35 Reward Points</p>
 
+            <button style="float: right" class="waves-effect waves-light btn">CLAIM</button>
 
         </li>
 
@@ -90,11 +91,60 @@
             <p class="product-description">Ice cold Zesto Orange Juice</p>
 
             <p class="product-price">20 Reward Points</p>
+            <button style="float: right" class="waves-effect waves-light btn">CLAIM</button>
 
         </li>
 
     </ul>
+</div>
+
+
+<div id="morePoints">
+    <div class="container">
+    <div class="row">
+        <br>
+        <div class="card">
+        <table class="responsive-table highlight" >
+            <thead> 
+                <center><i>Get more points by doing these!</i></center>
+                <tr>
+                    <th>TASK NO. 1</th>
+                    <th>TASK NO. 2</th>
+                    <th>TASK NO. 3</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                <td>Accomplish 3 worksheets in a day</td>
+                <td>Accomplish 1 worksheet under 5 minutes</td>
+                <td>Finish a stage in 4 weeks</td>
+                </tr>
+                <tr>
+                <td><button type="button" class="waves-effect waves-light btn">ACCOMPLISH</button></td>
+                <td><button class="waves-effect waves-light btn">ACCOMPLISH</button></td>
+                <td><button class="waves-effect waves-light btn">ACCOMPLISH</button></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+
+
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+M.AutoInit();
+        
 
+
+$(document).ready(function(){
+  $('.tabs').tabs();
+});
+</script>
 </html>
