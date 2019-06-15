@@ -9,6 +9,11 @@
 
     <title>Freebie: 12 Practical Templates For List Pages</title>
 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="assets/css/product-lists/product-list-small.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <!-- CSS  -->
@@ -41,61 +46,114 @@
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
+    <div class="section no-pad-bot" id="index-banner"><br>
+        <div class="container">
+            <h5 class="center orange-text">Your Total Points</h5>
+            <div class="row center">
+                <h2 class="header col s12 light">4,250 pts.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s2"></div>
+        <div class="col s8">
+            <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                <li class="tab"><a class="active" href="#redeemRewards">Redeem Rewards</a></li>
+                <li class="tab"><a href="#morePoints">More Points</a></li>
+            </ul>
+        </div>
+        <div class="col s2"></div>
+    </div>
 
 
 
-    <ul class="product-list-small">
+    <div id="redeemRewards" class="col s12">
+        <ul class="product-list-small">
+            <li>
 
-        <li>
+                <a href="#" class="product-photo">
+                    <img src="https://thefoodcharlatan.com/wp-content/uploads/2018/11/Nanas-Famous-Homemade-Peppermint-Ice-Cream-6-e1543277868775.jpg"
+                        height="105" alt="Ice cream" />
+                </a>
+                <h2><a href="#">Ice Cream</a></h2>
+                <p class="product-description">Strawberry Ice cream</p>
+                <p class="product-price">50 Reward Points</p>
+                <button style="float: right" class="waves-effect waves-light btn">CLAIM</button>
+            </li>
+            <li>
 
-            <a href="#" class="product-photo">
-                <img src="https://thefoodcharlatan.com/wp-content/uploads/2018/11/Nanas-Famous-Homemade-Peppermint-Ice-Cream-6-e1543277868775.jpg"
-                    height="105" alt="Ice cream" />
-            </a>
+                <a href="#" class="product-photo">
+                    <img src="https://cdn.shopify.com/s/files/1/0037/1707/0960/products/Red_White_Blue_Popsicle_copy_1000x1000.jpg?v=1537923421"
+                        height="105" alt="Popsicle" />
+                </a>
 
-            <h2><a href="#">Ice Cream</a></h2>
-
-
-            <p class="product-description">Strawberry Ice cream</p>
-
-            <p class="product-price">50 Reward Points</p>
-
-
-        </li>
-
-        <li>
-
-            <a href="#" class="product-photo">
-                <img src="https://cdn.shopify.com/s/files/1/0037/1707/0960/products/Red_White_Blue_Popsicle_copy_1000x1000.jpg?v=1537923421"
-                    height="105" alt="Popsicle" />
-            </a>
-
-            <h2><a href="#">Popsicle</a></h2>
+                <h2><a href="#">Popsicle</a></h2>
 
 
-            <p class="product-description">Popsicle</p>
+                <p class="product-description">Popsicle</p>
 
-            <p class="product-price">35 Reward Points</p>
+                <p class="product-price">35 Reward Points</p>
+
+                <button style="float: right" class="waves-effect waves-light btn">CLAIM</button>
+
+            </li>
+
+            <li>
+
+                <a href="#" class="product-photo">
+                    <img src="https://shop.smmarkets.ph/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/h/t/httpsshop.smmarkets.phmediawysiwyglostnfound32013428003_-_zest_o_juice_orange_200ml.png"
+                        height="105" alt="Zesto Orange" />
+                </a>
+
+                <h2><a href="#">Zesto Orange Juice</a></h2>
 
 
-        </li>
+                <p class="product-description">Ice cold Zesto Orange Juice</p>
 
-        <li>
+                <p class="product-price">20 Reward Points</p>
+                <button style="float: right" class="waves-effect waves-light btn">CLAIM</button>
 
-            <a href="#" class="product-photo">
-                <img src="https://shop.smmarkets.ph/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/h/t/httpsshop.smmarkets.phmediawysiwyglostnfound32013428003_-_zest_o_juice_orange_200ml.png"
-                    height="105" alt="Zesto Orange" />
-            </a>
+            </li>
+        </ul>
+    </div>
 
-            <h2><a href="#">Zesto Orange Juice</a></h2>
+    <div class="container">
 
+        <div class="card">
+            <div class="row">
+                <div class="col s12" id="morePoints">
+                    <h5><i><b>
+                                <center>Get more points by doing these!</center>
+                            </b></i></h5>
+                    <div class="divider"></div>
+                    <table class="responsive-table highlight centered">
+                        <thead>
+                            <tr>
+                                <th>TASK NO. 1</th>
+                                <th>TASK NO. 2</th>
+                                <th>TASK NO. 3</th>
+                            </tr>
+                        </thead>
 
-            <p class="product-description">Ice cold Zesto Orange Juice</p>
+                        <tbody>
+                            <tr>
+                                <td>Accomplish 3 worksheets in a day</td>
+                                <td>Accomplish 1 worksheet under 5 minutes</td>
+                                <td>Finish a stage in 4 weeks</td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn">ACCOMPLISH</button></td>
+                                <td><button class="btn">ACCOMPLISH</button></td>
+                                <td><button class="btn">ACCOMPLISH</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <p class="product-price">20 Reward Points</p>
-
-        </li>
-
+    </div>
     </ul>
     <footer class="page-footer orange">
         <div class="container">
@@ -103,11 +161,22 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Caballero, Gabriel, Go,
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Caballero, Gabriel,
+                    Go,
                     Tiu, Raymundo</a>
             </div>
         </div>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+    M.AutoInit();
+
+
+
+    $(document).ready(function () {
+        $('.tabs').tabs();
+    });
+</script>
 
 </html>
